@@ -1,6 +1,6 @@
 module.exports = {
     testing: function (req) {
-
+        console.log("testing helper")
         return new Promise(function (resolve, reject) {
             /*var response = {};
             response['authCode'] = error_code;
