@@ -1,5 +1,5 @@
 // Configuring the database
-//var dbConfig = require('../../../config/database.config.js');
+var dbConfig = require('../../../config/database.config.js');
 
 exports.executeQuery = function(query,values_arr) {
     return new Promise(function(resolve, reject) {
@@ -10,9 +10,6 @@ exports.executeQuery = function(query,values_arr) {
             } else {                
                 resolve(response);
             }
-          
     	});
-    
-	});
-   
+	});   
 }
